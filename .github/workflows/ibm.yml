@@ -21,7 +21,7 @@ jobs:
       env:
         IBM_ACCOUNT: ${{ secrets.IBM_ACCOUNT }}
       run: |
-        ./IBM_Cloud_CLI/ibmcloud login -a https://cloud.ibm.com --apikey "$IBM_ACCOUNT"
+        ./IBM_Cloud_CLI/ibmcloud login -a https://cloud.ibm.com --apikey $IBM_ACCOUNT
     - name: Target IBM Cloud
       env:
         REGION_NUM: ${{ secrets.REGION_NUM }}
